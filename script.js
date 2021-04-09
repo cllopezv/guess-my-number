@@ -30,6 +30,7 @@ document.querySelector('.check').addEventListener('click', function () {
     displayMessage('Correct Number 🎉');
     changeBgColor('#60b347');
     document.querySelector('.number').style.width = '30rem';
+    document.querySelector('.number').textContent = secretNumber;
 
     if (score > highScore) {
       highScore = score;
